@@ -1,6 +1,6 @@
-[![Build](https://github.com/promcteam/blueprint/actions/workflows/maven.yml/badge.svg?branch=main)](https://s01.oss.sonatype.org/content/repositories/snapshots/studio/magemonkey/blueprint/)
-[![Build](https://github.com/promcteam/blueprint/actions/workflows/release.yml/badge.svg?branch=main)](https://s01.oss.sonatype.org/content/repositories/snapshots/studio/magemonkey/blueprint/)
-[![Build](https://github.com/promcteam/blueprint/actions/workflows/devbuild.yml/badge.svg?branch=dev)](https://s01.oss.sonatype.org/content/repositories/snapshots/studio/magemonkey/blueprint/1.0.1-R0.2-SNAPSHOT/)
+[![Build](https://github.com/magemonkeystudio/blueprint/actions/workflows/maven.yml/badge.svg?branch=main)](https://s01.oss.sonatype.org/content/repositories/snapshots/studio/magemonkey/blueprint/)
+[![Build](https://github.com/magemonkeystudio/blueprint/actions/workflows/release.yml/badge.svg?branch=main)](https://s01.oss.sonatype.org/content/repositories/snapshots/studio/magemonkey/blueprint/)
+[![Build](https://github.com/magemonkeystudio/blueprint/actions/workflows/devbuild.yml/badge.svg?branch=dev)](https://s01.oss.sonatype.org/content/repositories/snapshots/studio/magemonkey/blueprint/1.0.1-R0.3-SNAPSHOT/)
 
 # Blueprint
 
@@ -31,6 +31,6 @@ block.
 
 ### A huge thanks to our contributors
 
-<a href="https://github.com/promcteam/blueprint/graphs/contributors">
-<img src="https://contrib.rocks/image?repo=promcteam/blueprint" />
+<a href="https://github.com/magemonkeystudio/blueprint/graphs/contributors">
+<img src="https://contrib.rocks/image?repo=magemonkeystudio/blueprint" />
 </a>
