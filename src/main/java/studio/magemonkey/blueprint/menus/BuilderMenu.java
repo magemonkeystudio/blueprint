@@ -737,28 +737,45 @@ public class BuilderMenu extends Menu {
             double y      = this.origin.getY();
             double z      = this.origin.getZ();
 
-            player.spawnParticle(Particle.CRIT, x, y, z, amount, offset, 0, 0, 0);
-            player.spawnParticle(Particle.CRIT, x, y + height, z, amount, offset, 0, 0, 0);
-            player.spawnParticle(Particle.CRIT, x, y, z + length, amount, offset, 0, 0, 0);
-            player.spawnParticle(Particle.CRIT, x, y + height, z + length, amount, offset, 0, 0, 0);
+            spawnParticle(player, Particle.CRIT, x, y, z, amount, offset, 0, 0, 0);
+            spawnParticle(player, Particle.CRIT, x, y + height, z, amount, offset, 0, 0, 0);
+            spawnParticle(player, Particle.CRIT, x, y, z + length, amount, offset, 0, 0, 0);
+            spawnParticle(player, Particle.CRIT, x, y + height, z + length, amount, offset, 0, 0, 0);
 
             x = this.origin.getX();
             y += height / 2;
             offset = height / 5;
             amount = Math.max(1, Math.abs((int) height * 5));
-            player.spawnParticle(Particle.CRIT, x, y, z, amount, 0, offset, 0, 0);
-            player.spawnParticle(Particle.CRIT, x + width, y, z, amount, 0, offset, 0, 0);
-            player.spawnParticle(Particle.CRIT, x, y, z + length, amount, 0, offset, 0, 0);
-            player.spawnParticle(Particle.CRIT, x + width, y, z + length, amount, 0, offset, 0, 0);
+            spawnParticle(player, Particle.CRIT, x, y, z, amount, 0, offset, 0, 0);
+            spawnParticle(player, Particle.CRIT, x + width, y, z, amount, 0, offset, 0, 0);
+            spawnParticle(player, Particle.CRIT, x, y, z + length, amount, 0, offset, 0, 0);
+            spawnParticle(player, Particle.CRIT, x + width, y, z + length, amount, 0, offset, 0, 0);
 
             y = this.origin.getY();
             z += length / 2;
             offset = length / 5;
             amount = Math.max(5, Math.abs((int) length * 5));
-            player.spawnParticle(Particle.CRIT, x, y, z, amount, 0, 0, offset, 0);
-            player.spawnParticle(Particle.CRIT, x + width, y, z, amount, 0, 0, offset, 0);
-            player.spawnParticle(Particle.CRIT, x, y + height, z, amount, 0, 0, offset, 0);
-            player.spawnParticle(Particle.CRIT, x + width, y + height, z, amount, 0, 0, offset, 0);
+            spawnParticle(player, Particle.CRIT, x, y, z, amount, 0, 0, offset, 0);
+            spawnParticle(player, Particle.CRIT, x + width, y, z, amount, 0, 0, offset, 0);
+            spawnParticle(player, Particle.CRIT, x, y + height, z, amount, 0, 0, offset, 0);
+            spawnParticle(player, Particle.CRIT, x + width, y + height, z, amount, 0, 0, offset, 0);
+        }
+
+        private void spawnParticle(Player player,
+                                   Particle particle,
+                                   double x,
+                                   double y,
+                                   double z,
+                                   int count,
+                                   double dx,
+                                   double dy,
+                                   double dz,
+                                   float speed) {
+            try {
+                player.spawnParticle(particle, x, y, z, count, dx, dy, dz, speed, null, true);
+            } catch (NoSuchMethodError ignored) {
+                player.spawnParticle(particle, x, y, z, count, dx, dy, dz, speed);
+            }
         }
     }
 }
