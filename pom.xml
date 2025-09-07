@@ -7,7 +7,7 @@
     <parent>
         <groupId>studio.magemonkey</groupId>
         <artifactId>magemonkey-parent</artifactId>
-        <version>1.21.7-R0.3</version>
+        <version>1.21.8-R1</version>
     </parent>
 
     <artifactId>blueprint</artifactId>
@@ -27,8 +27,12 @@
             <url>https://maven.citizensnpcs.co/repo</url>
         </repository>
         <repository>
-            <id>sonatype</id>
-            <url>https://central.sonatype.com/repository/maven-snapshots/</url>
+            <id>magemonkey-releases</id>
+            <url>https://repo.travja.dev/releases</url>
+        </repository>
+        <repository>
+            <id>magemonkey-snapshots</id>
+            <url>https://repo.travja.dev/releases</url>
         </repository>
         <repository>
             <id>MikeRepo</id>
