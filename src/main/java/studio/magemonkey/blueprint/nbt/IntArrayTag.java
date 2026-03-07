@@ -1,7 +1,7 @@
 /*
  * JNBT License
  *
- * Copyright (c) 2024 MageMonkeyStudio
+ * © 2026 VoidEdge
  * All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
