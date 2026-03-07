@@ -1,5 +1,5 @@
 [![Build](https://github.com/magemonkeystudio/blueprint/actions/workflows/maven.yml/badge.svg?branch=main)](https://repo.travja.dev/snapshots/studio/magemonkey/blueprint/)
-[![Build](https://github.com/magemonkeystudio/blueprint/actions/workflows/release.yml/badge.svg?branch=main)](https://repo.travja.dev/snapshots/studio/magemonkey/blueprint/)
+[![Build](https://github.com/magemonkeystudio/blueprint/actions/workflows/release.yml/badge.svg?branch=main)](https://repo.travja.dev/releases/studio/magemonkey/blueprint/)
 [![Build](https://github.com/magemonkeystudio/blueprint/actions/workflows/devbuild.yml/badge.svg?branch=dev)](https://repo.travja.dev/snapshots/studio/magemonkey/blueprint/1.0.1-R0.3-SNAPSHOT/)
 
 # Blueprint
