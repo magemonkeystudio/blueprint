@@ -42,6 +42,10 @@
             <id>glaremasters repo</id>
             <url>https://repo.glaremasters.me/repository/towny/</url>
         </repository>
+        <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
+        </repository>
     </repositories>
 
     <dependencies>
